@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    background-color: #f3efca;
 }
 
 .title2 {
@@ -15,14 +16,34 @@
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
+    background-color: rgb(214, 171, 254);
+    max-width: 54vw;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 14px -2px rgb(0 0 0 / 52%);
 }
 
 .images {
-    max-width: 40vw;
+    max-width: 30vw;
 }
 
 .description {
     text-align: center;
+}
+
+.back {
+    margin-bottom: 12px;
+    border: none;
+    padding: 11px;
+    border-radius: 50px;
+    background-color: burlywood;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.back:hover {
+    background-color: rgb(109, 64, 5);
+    color: white;
 }
 
 .loading {

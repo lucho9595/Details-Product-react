@@ -30,10 +30,10 @@ export const Details = () => {
           <h3>{product.title}</h3>
           <img src={product.image} className={styles.images} alt="product" />
           <p className={styles.description}>Descripcion: {product.description}</p>
-          <p>Precio: {product.price}</p>
-          <p>Cantidad: {product.rating.count}</p>
-          <p>SKU: 4892153670</p>
-          <NavLink to="/"><button>Volver al inicio</button></NavLink>
+          <p><strong>Precio: </strong>{product.price}</p>
+          <p><strong>Cantidad: </strong>{product.rating.count}</p>
+          <p><strong>SKU: </strong>4892153670</p>
+          <NavLink to="/"><button className={styles.back}>Volver al inicio</button></NavLink>
         </div>
       ) : (
         <div>
