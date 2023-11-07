@@ -1,0 +1,34 @@
+.containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title2 {
+    text-align: center;
+}
+
+.containerDetails {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.images {
+    max-width: 40vw;
+}
+
+.description {
+    text-align: center;
+}
+
+.loading {
+    position: fixed;
+    bottom: 0;
+    transform: translateX(-50%);
+    min-height: 20%;
+    max-width: 100%;
+}

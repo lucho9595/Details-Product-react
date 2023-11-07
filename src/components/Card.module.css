@@ -1,0 +1,30 @@
+.containerInfo {
+    display: flex;
+    background-color: rgb(214, 171, 254);
+    min-width: 91vw;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+    align-content: center;
+    border-radius: 15px;
+}
+
+.title {
+    margin: 15px;
+}
+
+.button {
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: burlywood;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.button:hover {
+    background-color: rgb(109, 64, 5);
+    color: white;
+}

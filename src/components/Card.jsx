@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import styles from "./Card.module.css";
 
 export const Card = () => {
     const [data, setData] = useState([]);
@@ -17,7 +18,7 @@ export const Card = () => {
 
     useEffect(() => {
         getProducts()
-    }, [])
+    }, []);
 
     return (
         <>
@@ -25,10 +26,10 @@ export const Card = () => {
             {
                 data.map((producto) => {
                     return (
-                        <div key={producto.id}>
-                            <p>{producto.title}</p>
+                        <div className={styles.containerInfo} key={producto.id}>
+                            <p className={styles.title}>{producto.title}</p>
                             <NavLink to={`/details/${producto.id}`}>
-                                <button>Detalle</button>
+                                <button className={styles.button}>Detalle</button>
                             </NavLink>
                         </div>
                     );
